@@ -109,30 +109,9 @@ const HeroSection: React.FC = () => {
                                             }
                                         }}
                                     >
-                                        Last year,{" "}
+                                        This year,{" "}
                                     </Box>
-                                    <Box
-                                        component="span"
-                                        sx={{
-                                            display: {
-                                                xs: "none",
-                                                sm: "inline"
-                                            }
-                                        }}
-                                    >
-                                        HackIllinois had{" "}
-                                    </Box>
-                                    <Box
-                                        component="span"
-                                        sx={{
-                                            display: {
-                                                xs: "inline",
-                                                sm: "none"
-                                            }
-                                        }}
-                                    >
-                                        HackIllinois has{" "}
-                                    </Box>
+                                    HackIllinois has{" "}
                                     <Box
                                         component="span"
                                         sx={{

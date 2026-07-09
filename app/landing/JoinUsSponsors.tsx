@@ -10,8 +10,6 @@ import clsx from "clsx";
 import { motion, useAnimation, Variants, useInView } from "framer-motion"; // Added useInView
 import { useParallaxScrollY } from "@/hooks/use-parallax-scrollY";
 import { useEffect, useMemo, useRef } from "react"; // Added hooks
-import { GradientButton } from "@/components/GradientButton/GradientButton";
-import { INTEREST_FORM_LINK } from "./constants";
 
 const alienAssets = [
     "/landing/sponsors/aliens/alien1.svg",
@@ -410,56 +408,40 @@ const JoinUsSponsors = () => {
                         <Box
                             sx={{
                                 display: "flex",
-                                flexDirection: "column",
-                                alignItems: "center",
-                                gap: 0
+                                alignItems: "flex-start",
+                                justifyContent: "center",
+                                gap: "30px",
+                                zIndex: 95
                             }}
                         >
                             <Box
                                 sx={{
-                                    display: "flex",
-                                    alignItems: "flex-start",
-                                    justifyContent: "center",
-                                    gap: "30px",
-                                    zIndex: 95
+                                    display: {
+                                        xs: "none",
+                                        md: "block"
+                                    }
                                 }}
                             >
-                                <Box
-                                    sx={{
-                                        display: {
-                                            xs: "none",
-                                            md: "block"
-                                        }
-                                    }}
-                                >
-                                    <GradientButtonInstagram />
-                                </Box>
-                                <Box>
-                                    <Typography
-                                        variant="body2"
-                                        component="p"
-                                        sx={{
-                                            fontFamily: "Tsukimi Rounded",
-                                            fontSize: {
-                                                xs: "14px",
-                                                md: "20px"
-                                            },
-                                            color: "#3F2B75",
-                                            fontWeight: 600,
-                                            mb: 1
-                                        }}
-                                    >
-                                        NEWSLETTER SIGN UP
-                                    </Typography>
-                                    <NewsletterSubscription />
-                                </Box>
+                                <GradientButtonInstagram />
                             </Box>
                             <Box>
-                                <GradientButton
-                                    text="HACK 2027 INTEREST FORM"
-                                    link={INTEREST_FORM_LINK}
-                                    external
-                                />
+                                <Typography
+                                    variant="body2"
+                                    component="p"
+                                    sx={{
+                                        fontFamily: "Tsukimi Rounded",
+                                        fontSize: {
+                                            xs: "14px",
+                                            md: "20px"
+                                        },
+                                        color: "#3F2B75",
+                                        fontWeight: 600,
+                                        mb: 1
+                                    }}
+                                >
+                                    NEWSLETTER SIGN UP
+                                </Typography>
+                                <NewsletterSubscription />
                             </Box>
                         </Box>
                     </motion.div>

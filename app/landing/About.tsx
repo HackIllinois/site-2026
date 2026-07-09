@@ -152,9 +152,13 @@ const About = () => {
                     >
                         HackIllinois is the University of Illinois
                         Urbana-Champaign&apos;s premier collegiate hackathon.
-                        Stay up to date by{" "}
-                        <strong>filling out our interest form&nbsp;</strong>
-                        -- HackIllinois 2027 will happen early next year.
+                        Prospective attendees can register by the{" "}
+                        <strong>
+                            priority deadline on January 4, 2026 to be entered
+                            into a raffle to win an iPad
+                        </strong>
+                        , or the <span>final deadline on January 27, 2026</span>
+                        .
                     </Typography>
                 </motion.div>
 
