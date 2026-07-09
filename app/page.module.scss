@@ -1,0 +1,277 @@
+.bottomSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5rem;
+
+    .teamsSection {
+        background-image: url("/about/teams-triangle.svg");
+        background-size: auto 75%;
+        background-repeat: no-repeat;
+        padding: 3.75% 0;
+
+        > h1 {
+            @media screen and (max-width: 768px) {
+                font-size: 2.5rem;
+            }
+        }
+
+        .body {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            column-gap: 5%;
+            margin-top: 2rem;
+
+            .list {
+                display: inline-flex;
+                flex-direction: column;
+                row-gap: 2.25rem;
+
+                // margin-left: 2.5%; // adds margin left from line of heading
+                .listItem {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    column-gap: 2rem;
+
+                    .listItemText {
+                        font-size: 3rem;
+                        font-weight: 400;
+                        line-height: 3.75rem;
+                        @media screen and (max-width: 768px) {
+                            font-size: 2rem;
+                            line-height: 3rem;
+                        }
+                    }
+                }
+            }
+
+            .pictures {
+                display: grid;
+                grid-row-start: auto;
+                padding-bottom: 9rem;
+
+                > img:first-child {
+                    max-width: 100%;
+                    border-radius: 2.5rem;
+                    max-height: 38rem;
+                    grid-area: 1/1;
+                }
+
+                > img:nth-child(2) {
+                    width: 17.5rem;
+                    height: 17.5rem;
+                    grid-area: 1/1;
+                    margin-left: auto;
+                    margin-top: auto;
+                    margin-bottom: -9rem;
+                    margin-right: -5rem;
+                    justify-content: start;
+                }
+            }
+        }
+
+        > img {
+            height: 1rem;
+            width: 8.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .contactSection {
+        scroll-margin-top: 80px; // hash navigation offset
+
+        .contactBody {
+            // margin-left: 2.5%;
+            // margin-top: 2rem;
+            display: inline-flex;
+            flex-direction: row;
+
+            > div {
+                max-width: 50rem;
+                margin-top: 2rem;
+
+                > p {
+                    font-size: 1.25rem;
+                    // // font-weight: 500;
+                    line-height: 2.25rem;
+
+                    > a {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                        line-height: 2.25rem;
+                        color: #68c8bf;
+                    }
+                }
+            }
+
+            > img {
+                width: 25rem;
+                height: 32rem;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        .icons {
+            position: relative;
+            display: flex;
+            width: 100%;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            > div {
+                padding-top: 1.5rem;
+            }
+
+            .icon {
+                padding: 10px 45px;
+                // display: inline-flex;
+                // justify-content: center;
+                // align-items: center;
+                // background-color: #fba036;
+                // border-radius: 9999px;
+                // width: 4rem;
+                // height: 4rem;
+            }
+
+            @media screen and (max-width: 950px) {
+                > div {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-evenly;
+                }
+
+                .icon {
+                    padding: 5px;
+                }
+            }
+
+            @media screen and (max-width: 650px) {
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.bottomVectors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    margin-left: 5%; //This has to match Container's left padding
+
+    > img:nth-child(1) {
+        width: 7rem;
+        height: 1rem;
+    }
+
+    > img:nth-child(2) {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+}
+
+.webButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // transform: translateY(-80%);
+    z-index: 1;
+}
+
+// Mobile phone responsiveness
+@media screen and (max-width: 640px) {
+    .bottomSection {
+        .teamsSection {
+            background-image: url("/about/teams-triangle.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            .body {
+                display: inline-flex;
+                flex-direction: column;
+                row-gap: 5rem;
+
+                .pictures {
+                    > img:first-child {
+                        display: inherit;
+                    }
+
+                    > img:nth-child(2) {
+                        width: 8.75rem;
+                        height: 8.75rem;
+                        margin-bottom: -3rem;
+                        margin-right: -2rem;
+                    }
+                }
+            }
+        }
+
+        .contactSection {
+            .contactBody {
+                > img {
+                    width: 12rem;
+                    height: 18rem;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .bottomVectors {
+        > img:nth-child(1) {
+            width: 5rem;
+            height: 1rem;
+        }
+
+        > img:nth-child(2) {
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}
+
+// // Tablet responsiveness edge cases
+@media screen and (min-width: 641px) and (max-width: 900px) {
+    .bottomSection {
+        .teamsSection {
+            background-image: url("/about/teams-triangle.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            .body {
+                display: inline-flex;
+                flex-direction: row;
+                row-gap: 5rem;
+
+                .pictures {
+                    > img:nth-child(2) {
+                        width: 8.75rem;
+                        height: 8.75rem;
+                        margin-bottom: -3rem;
+                        margin-right: -2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.recapTitle {
+    text-align: center;
+    margin-bottom: 30px;
+}

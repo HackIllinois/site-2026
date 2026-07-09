@@ -1,0 +1,23 @@
+{
+    "extends": "next/core-web-vitals",
+    "plugins": ["unused-imports"],
+    "rules": {
+        "no-unused-vars": "off",
+        // or "@typescript-eslint/no-unused-vars": "off", if using TypeScript
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "varsIgnorePattern": "^_",
+                "args": "after-used",
+                "argsIgnorePattern": "^_"
+            }
+        ],
+
+        // temporary! for static holdover site:
+        "@next/next/no-img-element": "off",
+        "@next/next/no-page-custom-font": "off",
+        "jsx-a11y/alt-text": "off"
+    }
+}
