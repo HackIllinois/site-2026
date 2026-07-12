@@ -227,11 +227,12 @@ export default function CTFSubmit() {
     useEffect(() => {
         const checkAuth = async () => {
             try {
-                const response = await fetch(`${API_URL}/auth/token/`, {
-                    mode: "cors",
-                    credentials: "include"
-                });
-                setIsAuthenticated(response.ok);
+                // const response = await fetch(`${API_URL}/auth/token/`, {
+                //     mode: "cors",
+                //     credentials: "include"
+                // });
+                // setIsAuthenticated(response.ok);
+                setIsAuthenticated(false);
             } catch {
                 setIsAuthenticated(false);
             }
@@ -288,22 +289,22 @@ export default function CTFSubmit() {
         });
 
         try {
-            const response = await fetch(`${API_URL}/ctf/submit/${flagId}/`, {
-                method: "POST",
-                mode: "cors",
-                credentials: "include",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ answer: answer.trim() })
-            });
+            // const response = await fetch(`${API_URL}/ctf/submit/${flagId}/`, {
+            //     method: "POST",
+            //     mode: "cors",
+            //     credentials: "include",
+            //     headers: { "Content-Type": "application/json" },
+            //     body: JSON.stringify({ answer: answer.trim() })
+            // });
 
-            const data = await response.json();
+            // const data = await response.json();
 
-            if (response.ok) {
-                return { correct: true, claimed: false };
-            }
-            if (data.error === "AlreadyClaimed") {
-                return { correct: true, claimed: true };
-            }
+            // if (response.ok) {
+            //     return { correct: true, claimed: false };
+            // }
+            // if (data.error === "AlreadyClaimed") {
+            //     return { correct: true, claimed: true };
+            // }
             return { correct: false, claimed: false };
         } catch {
             return { correct: false, claimed: false };

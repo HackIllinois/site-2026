@@ -241,8 +241,8 @@ export const ResourcesPopup: React.FC<ResourcesPopupProps> = ({
     ];
 
     const platformsItems: { title: string; link: string }[] = [
-        // { title: "DISCORD", link: "https://go.hackillinois.org/discord" }
-        // { title: "DEVPOST", link: "https://hackillinois-2026.devpost.com" },
+        { title: "DISCORD", link: "https://go.hackillinois.org/discord" },
+        { title: "DEVPOST", link: "https://hackillinois-2026.devpost.com" }
         // {
         //     title: "IOS APP",
         //     link: "https://apps.apple.com/us/app/hackillinois/id1451755268"
@@ -254,15 +254,18 @@ export const ResourcesPopup: React.FC<ResourcesPopupProps> = ({
     ];
 
     const eventsItems: { title: string; link: string }[] = [
-        // { title: "OPENING CEREMONY", link: "https://hackillinois.org" },
-        // {
-        //     title: "WORKSHOPS",
-        //     link: "https://docs.google.com/document/d/1eAcfLvXOvHg61LSKDTmEWNIA--8JgSLumFDkFvTwsvA/edit?tab=t.0"
-        // },
-        // {
-        //     title: "CLASH ROYALE TOURNAMENT",
-        //     link: "https://luma.com/90escx6k"
-        // }
+        {
+            title: "OPENING CEREMONY",
+            link: "https://www.youtube.com/live/MVUfuKi2Oao?si=578aJLZImbjNN7vC"
+        },
+        {
+            title: "WORKSHOPS",
+            link: "https://docs.google.com/document/d/1eAcfLvXOvHg61LSKDTmEWNIA--8JgSLumFDkFvTwsvA/edit?tab=t.0"
+        },
+        {
+            title: "CLASH ROYALE TOURNAMENT",
+            link: "https://luma.com/90escx6k"
+        }
     ];
 
     const strokeColors = ["#FFCCF3", "#A3F2FF", "#FFC0B9", "#DDFFE4"];

@@ -2,19 +2,9 @@
 
 import ErrorSnackbar from "@/components/ErrorSnackbar/ErrorSnackbar";
 import Loading from "@/components/Loading/Loading";
-import {
-    Box,
-    Button,
-    Container,
-    Typography,
-    Accordion,
-    AccordionDetails,
-    AccordionSummary
-} from "@mui/material";
-import { ExpandMore } from "@mui/icons-material";
+import { Box, Container, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { GradientButton } from "@/components/GradientButton/GradientButton";
 import { derive } from "./utils";
 
 const TwinklingStar = ({
@@ -720,15 +710,32 @@ export default function CTF() {
                     </motion.div>
 
                     <motion.div variants={itemVariants}>
+                        <Typography
+                            sx={{
+                                fontFamily: "Montserrat",
+                                fontSize: { xs: "16px", md: "20px" },
+                                color: "rgba(255, 255, 255, 0.9)",
+                                maxWidth: "700px",
+                                mx: "auto",
+                                mb: 2,
+                                lineHeight: 1.8
+                            }}
+                        >
+                            The HackIllinois 2026 Mini-CTF has closed. Thanks
+                            for participating in HackIllinois!
+                        </Typography>
+                    </motion.div>
+
+                    {/* <motion.div variants={itemVariants}>
                         <Box sx={{ mb: 3 }}>
                             <GradientButton
                                 text="Go to flag submission page"
                                 link="/ctf/submit"
                             />
                         </Box>
-                    </motion.div>
+                    </motion.div> */}
 
-                    <motion.div variants={itemVariants}>
+                    {/* <motion.div variants={itemVariants}>
                         <Typography
                             sx={{
                                 fontFamily: "Montserrat",
@@ -1098,7 +1105,7 @@ export default function CTF() {
 
                     <Box ctf-flag="flag1" sx={{ display: "none" }}>
                         {`YOUR FIRST FLAG HERE: ${derive(["MWdoN30=", "MTQxbjU=", "YWcxLXA=", "dGZ7Zmw=", "aGFja2M="])}`}
-                    </Box>
+                    </Box> */}
                 </motion.div>
             </Container>
         </Box>
