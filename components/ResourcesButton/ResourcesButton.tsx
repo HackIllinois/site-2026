@@ -224,7 +224,7 @@ export const ResourcesPopup: React.FC<ResourcesPopupProps> = ({
         });
     }, []);
 
-    const guidesItems = [
+    const guidesItems: { title: string; link: string }[] = [
         {
             title: "ATTENDEE GUIDE",
             link: "https://hackillinois.org/attendee_guide.pdf"
@@ -240,25 +240,29 @@ export const ResourcesPopup: React.FC<ResourcesPopupProps> = ({
         // { title: "BUS SCHEDULE", link: "https://hackillinois.org" }
     ];
 
-    const platformsItems = [
-        { title: "DISCORD", link: "https://go.hackillinois.org/discord" },
-        { title: "DEVPOST", link: "https://hackillinois-2026.devpost.com" },
-        {
-            title: "IOS APP",
-            link: "https://apps.apple.com/us/app/hackillinois/id1451755268"
-        },
-        {
-            title: "ANDROID APP",
-            link: "https://play.google.com/store/apps/details?id=org.hackillinois.android.release"
-        }
+    const platformsItems: { title: string; link: string }[] = [
+        // { title: "DISCORD", link: "https://go.hackillinois.org/discord" }
+        // { title: "DEVPOST", link: "https://hackillinois-2026.devpost.com" },
+        // {
+        //     title: "IOS APP",
+        //     link: "https://apps.apple.com/us/app/hackillinois/id1451755268"
+        // },
+        // {
+        //     title: "ANDROID APP",
+        //     link: "https://play.google.com/store/apps/details?id=org.hackillinois.android.release"
+        // }
     ];
 
-    const eventsItems = [
+    const eventsItems: { title: string; link: string }[] = [
         // { title: "OPENING CEREMONY", link: "https://hackillinois.org" },
-        {
-            title: "Stay tuned for Hack 2027 :)",
-            link: "https://docs.google.com/forms/d/e/1FAIpQLSeco5rnd7eqrH0OBf7K5PgNfpGUfCpH8EpjJTSoiKKvO_6X5g/viewform"
-        }
+        // {
+        //     title: "WORKSHOPS",
+        //     link: "https://docs.google.com/document/d/1eAcfLvXOvHg61LSKDTmEWNIA--8JgSLumFDkFvTwsvA/edit?tab=t.0"
+        // },
+        // {
+        //     title: "CLASH ROYALE TOURNAMENT",
+        //     link: "https://luma.com/90escx6k"
+        // }
     ];
 
     const strokeColors = ["#FFCCF3", "#A3F2FF", "#FFC0B9", "#DDFFE4"];
