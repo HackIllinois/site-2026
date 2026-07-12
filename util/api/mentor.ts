@@ -308,6 +308,6 @@ const mentors = [
     }
 ];
 
-export const getMentors = () => {
+export async function getMentors() {
     return mentors as MentorProfile[];
-};
+}

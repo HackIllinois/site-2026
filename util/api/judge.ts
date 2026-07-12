@@ -457,6 +457,6 @@ const judges = [
     }
 ];
 
-export const getJudges = () => {
+export async function getJudges() {
     return judges as JudgeProfile[];
-};
+}

@@ -1,43 +1,62 @@
 import { archiveError, handleError } from "../helpers";
 import {
     AcceptAdmissionRSVPRequest,
-    RegistrationApplicationDraftBody
+    ChallengeResponse,
+    ChallengeStatus,
+    RegistrationApplicationDraftBody,
+    RegistrationApplicationSubmitted,
+    RSVPInfo
 } from "../types";
 
-export const registrationAlive = () => false;
+export async function registrationAlive() {
+    return false;
+}
 
-export const getChallenge = () => {
+export async function getChallenge(_shouldThrow?: boolean) {
     handleError(archiveError);
-};
+    return {} as ChallengeStatus;
+}
 
-export const submitChallenge = () => {
+export async function submitChallenge(_file: File) {
     handleError(archiveError);
-};
+    return {} as ChallengeResponse;
+}
 
-export const saveDraft = (_data: RegistrationApplicationDraftBody) => {
+export async function saveDraft(_data: RegistrationApplicationDraftBody) {
     handleError(archiveError);
-};
+    return {};
+}
 
-export const submitDraft = (_data: RegistrationApplicationDraftBody) => {
+export async function loadDraft() {
     handleError(archiveError);
-};
+    return {} as RegistrationApplicationDraftBody;
+}
 
-export const loadSubmission = () => {
+export async function submitDraft(_data: RegistrationApplicationDraftBody) {
     handleError(archiveError);
-};
+    return {};
+}
 
-export const loadAdmissionRSVP = () => {
+export async function loadSubmission() {
     handleError(archiveError);
-};
+    return {} as RegistrationApplicationSubmitted;
+}
 
-export const declineAdmissionRSVP = () => {
+export async function loadAdmissionRSVP() {
     handleError(archiveError);
-};
+    return {} as RSVPInfo;
+}
 
-export const acceptAdmissionRSVP = (_body: AcceptAdmissionRSVPRequest) => {
+export async function declineAdmissionRSVP() {
     handleError(archiveError);
-};
+}
 
-export const uploadFile = (_file: File) => {
+export async function acceptAdmissionRSVP(_body: AcceptAdmissionRSVPRequest) {
     handleError(archiveError);
-};
+    return {} as RSVPInfo;
+}
+
+export async function uploadFile(_file: File) {
+    handleError(archiveError);
+    return {};
+}

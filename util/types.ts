@@ -235,3 +235,8 @@ export type UserInfo = {
     name: string;
     email: string;
 };
+
+export type UserQr = {
+    userId: string;
+    qrInfo: string;
+};

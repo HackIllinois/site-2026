@@ -1207,6 +1207,6 @@ const events = [
     }
 ];
 
-export const getEvents = () => {
+export async function getEvents() {
     return events as EventType[];
-};
+}
