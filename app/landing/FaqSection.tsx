@@ -2,9 +2,8 @@
 
 import { FAQ } from "@/components/FAQ/FAQ";
 import { SocialIconsRow } from "@/components/GradientButton/GradientSocialButton";
-import NewsletterSubscription from "@/components/NewsletterSubscription/NewsletterSubscription";
 import { tsukimi } from "@/theme/fonts";
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import clsx from "clsx";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
@@ -137,8 +136,7 @@ const FaqSection = () => {
                     <SocialIconsRow />
                 </motion.div>
 
-                <Box>
-                    {/* Item 3: Helper Text */}
+                {/* <Box>
                     <motion.div variants={itemVariants}>
                         <Typography
                             variant="body1"
@@ -153,11 +151,10 @@ const FaqSection = () => {
                         </Typography>
                     </motion.div>
 
-                    {/* Item 4: Newsletter Component */}
                     <motion.div variants={itemVariants}>
                         <NewsletterSubscription />
                     </motion.div>
-                </Box>
+                </Box> */}
             </motion.div>
 
             {/* City Skyline */}

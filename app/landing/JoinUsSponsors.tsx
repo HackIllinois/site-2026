@@ -4,7 +4,6 @@ import { Box, Link, Typography, useMediaQuery } from "@mui/material";
 import styles from "./JoinUsSponsors.module.scss";
 import Image from "next/image";
 import { tsukimi } from "@/theme/fonts";
-import NewsletterSubscription from "@/components/NewsletterSubscription/NewsletterSubscription";
 import { GradientButtonInstagram } from "@/components/GradientButton/GradientButtonInstagram";
 import clsx from "clsx";
 import { motion, useAnimation, Variants, useInView } from "framer-motion"; // Added useInView
@@ -355,17 +354,35 @@ const JoinUsSponsors = () => {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <motion.div variants={itemVariants}>
-                        <Typography
-                            variant="h2"
+                        <Box
                             sx={{
-                                fontFamily: "Tsukimi Rounded",
-                                fontWeight: 600,
-                                color: "#3F2B75",
-                                textAlign: "center"
+                                display: "flex",
+                                alignItems: "center",
+                                gap: 4
                             }}
                         >
-                            JOIN US
-                        </Typography>
+                            <Box
+                                sx={{
+                                    display: {
+                                        xs: "none",
+                                        md: "block"
+                                    }
+                                }}
+                            >
+                                <GradientButtonInstagram />
+                            </Box>
+                            <Typography
+                                variant="h2"
+                                sx={{
+                                    fontFamily: "Tsukimi Rounded",
+                                    fontWeight: 600,
+                                    color: "#3F2B75",
+                                    textAlign: "center"
+                                }}
+                            >
+                                JOIN US
+                            </Typography>
+                        </Box>
                     </motion.div>
 
                     <motion.div variants={itemVariants}>
@@ -398,13 +415,12 @@ const JoinUsSponsors = () => {
                                 </Link>
                                 )
                             </b>{" "}
-                            or <b>subscribe to our newsletter</b> to be notified
-                            of our event updates! There will be regular content
-                            and posts.
+                            to be notified of our event updates! There will be
+                            regular content and posts.
                         </Typography>
                     </motion.div>
 
-                    <motion.div variants={itemVariants}>
+                    {/* <motion.div variants={itemVariants}>
                         <Box
                             sx={{
                                 display: "flex",
@@ -444,7 +460,7 @@ const JoinUsSponsors = () => {
                                 <NewsletterSubscription />
                             </Box>
                         </Box>
-                    </motion.div>
+                    </motion.div> */}
                 </motion.div>
 
                 <motion.div

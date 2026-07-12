@@ -3,7 +3,6 @@
 import ErrorSnackbar from "@/components/ErrorSnackbar/ErrorSnackbar";
 import { SocialIconsRow } from "@/components/GradientButton/GradientSocialButton";
 import Loading from "@/components/Loading/Loading";
-import NewsletterSubscription from "@/components/NewsletterSubscription/NewsletterSubscription";
 import {
     declineAdmissionRSVP,
     loadAdmissionRSVP,
@@ -257,11 +256,10 @@ export default function RSVP() {
                         }}
                     >
                         If you would like to stay up to date with HackIllinois,
-                        consider following our socials or subscribing to our
-                        newsletter.
+                        consider following our socials!
                     </Typography>
                     <SocialIconsRow />
-                    <Box
+                    {/* <Box
                         sx={{
                             marginTop: { xs: "1rem", md: "3rem" },
                             maxWidth: "700px"
@@ -283,7 +281,7 @@ export default function RSVP() {
                             Newsletter signup
                         </Typography>
                         <NewsletterSubscription />
-                    </Box>
+                    </Box> */}
                 </Container>
             </Box>
         );
