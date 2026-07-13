@@ -272,7 +272,7 @@ export default function CTF() {
 
     const pingMiniApi = async () => {
         try {
-            await fetch("/ctf/miniapi");
+            await fetch("/ctf/miniapi/index");
         } catch (e: any) {
             setErrorMessage(e?.message || "Failed to ping MiniAPI.");
             setShowErrorAlert(true);
