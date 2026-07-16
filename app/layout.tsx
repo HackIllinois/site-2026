@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <title>HackIllinois 2026</title>
                 <meta
                     name="description"
-                    content="Launch your Legacy and build your dreams at HackIllinois 2026. February 27 - March 1, 2026. Registrations open."
+                    content="Launch your Legacy and build your dreams at HackIllinois 2026. February 27 - March 1, 2026."
                 />
                 <meta
                     name="viewport"
@@ -32,14 +32,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <meta property="og:title" content="HackIllinois 2026" />
                 <meta
                     property="og:description"
-                    content="Launch your Legacy and build your dreams at HackIllinois 2026. February 27 - March 1, 2026. Registrations open."
+                    content="Launch your Legacy and build your dreams at HackIllinois 2026. February 27 - March 1, 2026."
                 />
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="HackIllinois" />
-                <meta property="og:url" content="https://hackillinois.org" />
+                <meta
+                    property="og:url"
+                    content="https://2026.hackillinois.org"
+                />
                 <meta
                     property="og:image"
-                    content="https://hackillinois.org/og-image.jpg"
+                    content="https://2026.hackillinois.org/og-image.jpg"
                 />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -50,11 +53,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <meta name="twitter:title" content="HackIllinois 2026" />
                 <meta
                     name="twitter:description"
-                    content="Launch your Legacy and build your dreams at HackIllinois 2026. February 27 - March 1, 2026. Registrations open."
+                    content="Launch your Legacy and build your dreams at HackIllinois 2026. February 27 - March 1, 2026."
                 />
                 <meta
                     name="twitter:image"
-                    content="https://hackillinois.org/og-image.jpg"
+                    content="https://2026.hackillinois.org/og-image.jpg"
                 />
             </head>
             <body

@@ -227,17 +227,17 @@ export const ResourcesPopup: React.FC<ResourcesPopupProps> = ({
     const guidesItems: { title: string; link: string }[] = [
         {
             title: "ATTENDEE GUIDE",
-            link: "https://hackillinois.org/attendee_guide.pdf"
+            link: "https://2026.hackillinois.org/attendee_guide.pdf"
         },
         {
             title: "PRIZE INFO GUIDE",
-            link: "https://go.hackillinois.org/prizes"
+            link: "https://2026.hackillinois.org/prize_and_track_list.pdf"
         },
         {
             title: "HOW TO HACK (BEGINNER)",
-            link: "https://hackillinois.org/how_to_hack.pdf"
+            link: "https://2026.hackillinois.org/how_to_hack.pdf"
         }
-        // { title: "BUS SCHEDULE", link: "https://hackillinois.org" }
+        // { title: "BUS SCHEDULE", link: "https://2026.hackillinois.org" }
     ];
 
     const platformsItems: { title: string; link: string }[] = [
@@ -260,7 +260,7 @@ export const ResourcesPopup: React.FC<ResourcesPopupProps> = ({
         },
         {
             title: "WORKSHOPS",
-            link: "https://docs.google.com/document/d/1eAcfLvXOvHg61LSKDTmEWNIA--8JgSLumFDkFvTwsvA/edit?tab=t.0"
+            link: "https://2026.hackillinois.org/workshop_slides_links.pdf"
         },
         {
             title: "CLASH ROYALE TOURNAMENT",

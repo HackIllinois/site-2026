@@ -630,7 +630,7 @@ const events = [
         isStaff: false,
         name: "Cosmic CTF Challenge",
         description:
-            "The engines cut out, the power disappeared, you’re adrift in the void of space. What would you do in this hypothetical situation? Prove yourself to be the worthiest of Hackstronauts with a gauntlet of technical challenges we have prepared especially for you.\nLink: https://hackillinois.org/ctf \n",
+            "The engines cut out, the power disappeared, you’re adrift in the void of space. What would you do in this hypothetical situation? Prove yourself to be the worthiest of Hackstronauts with a gauntlet of technical challenges we have prepared especially for you.\nLink: https://2026.hackillinois.org/ctf \n",
         startTime: 1772305200,
         endTime: 1772308800,
         eventType: "MINIEVENT",

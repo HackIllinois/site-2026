@@ -87,7 +87,7 @@ const FAQ = () => {
                     <motion.div variants={itemVariants}>
                         <Typography
                             component="a"
-                            href="https://hackillinois.org/attendee_guide.pdf"
+                            href="https://2026.hackillinois.org/attendee_guide.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{
@@ -145,7 +145,7 @@ const FAQ = () => {
                             {/* Posted by Kevin Lynch */}
                             {/* Retrieved 2026-02-25, License - CC BY-SA 3.0 */}
                             <object
-                                data="https://hackillinois.org/attendee_guide.pdf"
+                                data="https://2026.hackillinois.org/attendee_guide.pdf"
                                 type="application/pdf"
                                 style={{
                                     width: "100%",
@@ -163,7 +163,7 @@ const FAQ = () => {
                                 >
                                     Your web browser doesn&apos;t have a PDF
                                     plugin. Instead you can{" "}
-                                    <a href="https://hackillinois.org/attendee_guide.pdf">
+                                    <a href="https://2026.hackillinois.org/attendee_guide.pdf">
                                         click here to download the PDF file.
                                     </a>
                                 </p>
